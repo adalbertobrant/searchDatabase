@@ -3,12 +3,12 @@
 #include <string.h>
 #include <time.h>
 
-//Mostra na tela o dia de hoje
+//Mostra na tela o dia de hoje // Show time and date
 void Dia (){
     const time_t timer = time(NULL);
     printf("Today is %s\n\n Have a NICE DAY \n\n\t \t:)\n\n", ctime(&timer));
 }
-//Conta as linhas que tem no arquivo
+//Conta as linhas que tem no arquivo // Function to count lines in a file
 
 int linhas(FILE *FP){
     int linha=0;
@@ -18,7 +18,8 @@ int linhas(FILE *FP){
 
         return linha;
     }
-// Acha palavra na linha
+// Acha palavra na linha // Find some string in a line
+
 void AchaPalavra(FILE *FP,char palavra[1024]){
    int ocorrencia=0;
    char buffer[1024];
